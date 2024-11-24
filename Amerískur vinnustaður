@@ -1,0 +1,10 @@
+//https://open.kattis.com/problems/ameriskur
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double n;
+    cin >> n;
+    printf("%.6f",0.09144*n);
+    //cout << 0.09144*n;
+}
