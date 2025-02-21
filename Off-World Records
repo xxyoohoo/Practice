@@ -1,0 +1,23 @@
+//https://open.kattis.com/challenge/ers55rwq/submissions/15499880
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n,x,y,z=0;
+    cin >> n >> x >> y;
+    vector<int> a(n);
+    for(int i=0;i<n;++i)
+    {
+        cin >> a[i];
+        if(a[i]>x+y)
+        {
+            if(x<y) x=a[i];
+            else y=a[i];
+            ++z;
+        }
+    }
+    cout << z;
+    return 0;
+}
