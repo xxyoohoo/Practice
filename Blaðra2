@@ -1,0 +1,10 @@
+//https://open.kattis.com/submissions/13830661
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int v,a,t,d;
+    cin >> v >> a >> t;
+    printf("%.7f",v*t+(0.5)*(a*t*t));
+}
