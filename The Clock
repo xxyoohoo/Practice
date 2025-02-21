@@ -1,10 +1,4 @@
-/*
-HOUR: 30 per hour; 0.5 per minute
-MINUTE: 6 per minute
-ANGLE = |30*hour+0.5*min-6*min|
-FINAL ANGLE = min(angle,360-angle)
-*/
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -14,7 +8,7 @@ int main()
     {
         for(int m=1;m<=60;++m)
         {
-            y=abs(10*(30*h+0.5*m-6*m));
+            int y=abs(10*(30*h+0.5*m-6*m));
             if(x==y||x==min(y,360-y))
             {
                 if(h<10) cout << 0 << h << ':';
