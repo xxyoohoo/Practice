@@ -1,0 +1,18 @@
+//https://open.kattis.com/submissions/15491403
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    char a,b;
+    cin >> n >> a;
+    while(cin >> b)
+    {
+        if(a==b)
+        {
+            cout << "Unnar fann hana!";
+            return 0;
+        }
+    }
+    cout << "Unnar fann hana ekki!";
+}
