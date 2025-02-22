@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    string s;
+    int n,x,y=0,z;
+    cin >> n >> s >> x;
+    if(s!="sponsring" && x>0) {cout << "Nekad"; return 0;}
+    if(s!="sponsring" && x==0) {cout << "Lagom"; return 0;}
+    if(x<0) {cout << "Nekad"; return 0;}
+    while(cin >> s)
+    {
+        cin >> z;
+        y+=abs(z);
+    }
+    if(y>x) cout << "Nekad";
+    else if(y==x) cout << "Lagom";
+    else cout << "Usch, vinst";
+    return 0;
+}
