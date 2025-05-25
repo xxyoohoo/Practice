@@ -13,12 +13,13 @@ int main()
         {'\'',';'},{'X','Z'},{'C','X'},{'V','C'},{'B','V'},{'N','B'},{'M','N'},{',','M'},{'.',','},{'/','.'}
     };
     string s;
-    while(getline(cin,s)) {
-    for(int i=0;i<s.length();++i)
+    while(getline(cin,s))
     {
-        if(s[i]==' ') cout << ' ';
-        else cout << flip[s[i]]; 
+        for(int i=0;i<s.length();++i)
+        {
+            if(s[i]==' ') cout << ' ';
+            else cout << flip[s[i]]; 
+        }
+        cout << endl;
     }
-    cout << endl;
-}
 }
