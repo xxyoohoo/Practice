@@ -7,7 +7,7 @@ int main()
     cin.tie(NULL);
     char a;
     cin >> a;
-    cout << a
+    cout << a;
     while(cin >> a)
     {
         if(a=='-')
