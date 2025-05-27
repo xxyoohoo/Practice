@@ -3,6 +3,8 @@
 using namespace std;
 int main()
 {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
     double lens,w=0,l=0,u=0,sy=0;
     string s;
     cin >> s;
