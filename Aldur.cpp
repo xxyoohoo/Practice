@@ -2,9 +2,12 @@
 using namespace std;
 int main()
 {
-    int n,x,y=9999999999;
-    cin >> n;
-    for(int i=0;i<n;++i)
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n,x,y;
+    cin >> n >> x;
+    y=x;
+    for(int i=1;i<n;++i)
     {
         cin >> x;
         if(x<=y) y=x;
