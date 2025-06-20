@@ -22,7 +22,7 @@ int main()
         else
         {
             if(c=='+') names.push_back(s);
-            else names.erase(remove(names.begin(),names.end(),s),names.end());
+            else erase(names.begin(),names.end(),s);
         }
     }
     return 0;
