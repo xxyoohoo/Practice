@@ -1,9 +1,0 @@
-#include<iostream>
-using namespace std;
-int main()
-{
-    int rx,ry,px,py,a=2;
-    cin >> rx >> ry >> px >> py;
-    if(rx==px || ry==py) a--;
-    cout << a;
-}
