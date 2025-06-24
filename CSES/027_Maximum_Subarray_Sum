@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long n,a[200000]={0},sum=-100000000,ans=-1000000000;
+    cin >> n;
+    for (int k=0;k<n;k++) 
+    {
+        cin >> a[k];
+        sum=max(a[k],sum+a[k]);
+        ans=max(ans,sum);
+    }
+    cout << ans << endl;
+}

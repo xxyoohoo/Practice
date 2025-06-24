@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+	int n,t,x;
+	cin >> n >> t;
+	vector<pair<int, int>> v;
+	for (int i=0;i<n;++i)
+	{
+		cin >> x;
+		v.push_back({x,i+1});
+	}
+	sort(v.begin(), v.end());
+	int l=0,r=n-1;
+	while (l<r)
+	{
+		if (v[l].first + v[r].first >t) r--;
+		else if (v[l].first+v[r].first<t) l++;
+		else if (v[l].first+v[r].first==t)
+		{
+			cout << v[l].second << " " << v[r].second << endl;
+			return 0;
+		}
+	}
+ 
+	cout << "IMPOSSIBLE" << endl;
+}
