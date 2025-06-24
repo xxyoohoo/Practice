@@ -1,0 +1,20 @@
+//https://open.kattis.com/submissions/13911181
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int x,y,z,count=0,a[100000]={0};
+    cin >> x >> y;
+
+    for(int i=0;i<y;++i)
+    {
+        cin >> z >> z;
+        a[z]++;
+        if(a[z]==1) ++count;
+    }
+    if(count<x) {cout << 0; return 0;}
+    x=1000000;
+    for(int i=0;i<count;++i) x=min(a[i+1],x);
+    cout << x;
+}

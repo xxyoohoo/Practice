@@ -1,0 +1,18 @@
+//https://open.kattis.com/submissions/15500273
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    string s;
+    int v=0,y=0;
+    cin >> s;
+    for(int i=0;i<s.length();++i)
+    {
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u') ++v;
+        else if(s[i]=='y') ++y;
+    }
+    cout << v << " " << v+y;
+    return 0;
+}
