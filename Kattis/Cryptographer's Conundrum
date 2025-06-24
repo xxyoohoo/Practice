@@ -1,0 +1,15 @@
+https://open.kattis.com/challenge/irshnzpn/submissions/15500044//
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    cin >> s;
+    int n = s.length(),x=0;
+    string t = "PER";
+    for (int i=0;i<n;++i) if (s[i]!=t[i%3])++x;
+    cout << x << endl;
+    
+    return 0;
+}

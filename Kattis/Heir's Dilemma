@@ -1,0 +1,28 @@
+//https://open.kattis.com/submissions/16950379
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int x,x2,y,z=0,j,a[10]={0};
+    cin >> x >> y;
+    memset(a,0,sizeof(a));
+    for(int i=x;i<=y;++i)
+    {
+        x2=i;
+        for(j=1;j<=6;++j)
+        {
+            int k=x2%10;
+            if(k==0) break;
+            if(a[k]>0) break;
+            if(i%k>0) break;
+            if(i%k==0 && j==6) z++;
+            a[k]++;
+            x2/=10;
+        }
+        memset(a,0,sizeof(a));
+    }
+    cout << z;
+    return 0;
+}

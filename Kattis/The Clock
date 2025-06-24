@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y;
+    cin >> x;
+    for(int h=1;h<=12;++h)
+    {
+        for(int m=1;m<=60;++m)
+        {
+            int y=abs(10*(30*h+0.5*m-6*m));
+            if(x==y||x==min(y,360-y))
+            {
+                if(h<10) cout << 0 << h << ':';
+                else cout << h << ':';
+                if(m<10) cout << 0 << m;
+                else cout << m;
+                return 0;
+            }
+        }
+    }
+}

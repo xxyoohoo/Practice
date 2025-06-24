@@ -1,0 +1,20 @@
+//https://open.kattis.com/submissions/13826334
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int k,q,r,b,kn,p;
+    cin >> k >> q >> r >> b >> kn >> p;
+    if(k==0) cout << 1 << ' ';
+    else cout << -(k-1) << ' ';
+    if(q==0) cout << 1 << ' ';
+    else cout << -(q-1) << ' ';
+    if(r<=2) cout << 2-r << ' ';
+    else cout <<-(r-2) << ' ';
+    if(b<=2) cout << 2-b << ' ';
+    else cout <<-(b-2) << ' ';
+    if(kn<=2) cout << 2-kn << ' ';
+    else cout <<-(kn-2) << ' ';
+    if(p<=8) cout << 8-p << ' ';
+    else cout <<-(p-8) << ' ';
+}
